@@ -87,7 +87,10 @@ const MealsFavTabNavigator =
 
 const FiltersNavigator = createStackNavigator({
     Filters: FiltersScreen
-});
+}, {
+    //initialRouteName: 'Categories',
+    defaultNavigationOptions: defaultStackNavOptions
+} );
 
 const MainNavigator = createDrawerNavigator(
     {
